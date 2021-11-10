@@ -1,116 +1,59 @@
 .container {
-  padding: 0 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 100px;
+  padding: 10px 20px;
+  border-bottom: 2px solid #444759;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  padding: 0 20px;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #343745;
+  color: #FFFFFF;
+}
+
+.header, .footer {
+  background-color: #21222C;
+  color: #FFFFFF;
 }
 
 .footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  height: 30px;
+  padding: 0 20px;
+  font-weight: bold;
+  border-top: 2px solid #444759;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  color: #52B7DF;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.footer .delimiters {
+  color: #C26193;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.footer .values {
+  color: #7C5FA5;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+/* 
+.footer span {
+  background: linear-gradient(
+     to right,
+     #CA6599 1%,
+     #9372C2 10%,
+     #9372C2 30%,
+     #9372C2 50%,
+     #9372C2 70%,
+     #9372C2 91%,
+     #CA6599 100%
+   );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
+*/

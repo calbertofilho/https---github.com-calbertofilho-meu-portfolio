@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <header className={styles.header}>
-        &lt;Image&gt;LOGO&lt;/Image&gt; Carlos Alberto ETI
+        <Image src="/logo.png" alt="Carlos Alberto ETI Logo" width="300" height="78" />
       </header>
 
       <main className={styles.main}>

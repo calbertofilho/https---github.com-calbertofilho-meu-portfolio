@@ -5,6 +5,8 @@
 }
 
 .header {
+  background-color: #21222C;
+  color: #FFFFFF;
   height: 100px;
   padding: 10px 20px;
   border-bottom: 2px solid #444759;
@@ -17,12 +19,9 @@
   color: #FFFFFF;
 }
 
-.header, .footer {
-  background-color: #21222C;
-  color: #FFFFFF;
-}
-
 .footer {
+  background-color: #191A21;
+  color: #FFFFFF;
   height: 30px;
   padding: 0 20px;
   font-weight: bold;
@@ -41,7 +40,7 @@
   color: #7C5FA5;
 }
 
-/* 
+/*
 .footer span {
   background: linear-gradient(
      to right,

@@ -7,9 +7,9 @@
 .header {
   background-color: #21222C;
   color: #FFFFFF;
-  height: 100px;
+  height: 116px;
   padding: 10px 20px;
-  border-bottom: 2px solid #444759;
+  border-bottom: 2px solid #313341;
 }
 
 .main {
@@ -25,7 +25,7 @@
   height: 30px;
   padding: 0 20px;
   font-weight: bold;
-  border-top: 2px solid #444759;
+  border-top: 2px solid #313341;
 }
 
 .footer a {

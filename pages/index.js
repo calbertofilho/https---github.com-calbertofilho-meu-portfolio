@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Carlos Alberto ETI [Portfólio]</title>
+        <title>Carlos Alberto ETI [Home]</title>
       </Head>
 
       <header className={styles.header}>
-        <Image src="/logo.png" alt="Carlos Alberto ETI Logo" width="300" height="78" />
+        <Image src="/logo.png" alt="Carlos Alberto ETI Logo" width="322" height="94" />
       </header>
 
       <main className={styles.main}>
@@ -19,15 +19,13 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
+        <span className={styles.delimiters}>[</span>
+          <span className={styles.values}>2020</span>&nbsp;<span className={styles.delimiters}>&copy;</span>&nbsp;<span className={styles.values}>{new Date().getFullYear()}</span>
+        <span className={styles.delimiters}>]</span>
+        &nbsp;&nbsp;
         <Link href="http://www.carlosalberto.eti.br">
           <a target="_blank">www.carlosalberto.eti.br</a>
         </Link>
-        &nbsp;
-        <span className={styles.delimiters}>&copy;</span>
-        &nbsp;
-        <span className={styles.delimiters}>[</span>
-          <span className={styles.values}>2020 - {new Date().getFullYear()}</span>
-        <span className={styles.delimiters}>]</span>
       </footer>
     </div>
   )

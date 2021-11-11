@@ -11,7 +11,29 @@ export default function Home() {
       </Head>
 
       <header className={styles.header}>
-        <Image src="/logo.png" alt="Carlos Alberto ETI Logo" width="322" height="94" />
+        <div className={styles.logo}>
+          <Link href="http://www.carlosalberto.eti.br">
+            <a><Image src="/logo.png" alt="Carlos Alberto ETI Logo" width="322" height="94" /></a>
+          </Link>
+        </div>
+
+        <div className={styles.menu}>
+          <Link href="#">
+            <a className={styles.btn}>Contato</a>
+          </Link>
+          &nbsp;
+          <Link href="http://mail.lberto.eti.br/">
+            <a className={styles.btn}>Webmail</a>
+          </Link>
+          &nbsp;
+          <Link href="#">
+            <a className={styles.btn}>App</a>
+          </Link>
+          &nbsp;
+          <Link href="#">
+            <a className={styles.btn}>Portfólio</a>
+          </Link>
+        </div>
       </header>
 
       <main className={styles.main}>
@@ -24,7 +46,7 @@ export default function Home() {
         <span className={styles.delimiters}>]</span>
         &nbsp;&nbsp;
         <Link href="http://www.carlosalberto.eti.br">
-          <a target="_blank">www.carlosalberto.eti.br</a>
+          <a>www.carlosalberto.eti.br</a>
         </Link>
       </footer>
     </div>

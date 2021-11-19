@@ -89,20 +89,3 @@
 .footer .values {
   color: #7C5FA5;
 }
-
-/*
-.footer span {
-  background: linear-gradient(
-     to right,
-     #CA6599 1%,
-     #9372C2 10%,
-     #9372C2 30%,
-     #9372C2 50%,
-     #9372C2 70%,
-     #9372C2 91%,
-     #CA6599 100%
-   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-*/

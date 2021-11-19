@@ -15,14 +15,14 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <Link href="#Sobre">
-          <a id="Sobre">
+          <section id="Sobre">
             <Image src="/sobre.png" alt="Carlos Alberto ETI Home" width="2008" height="1180" />
-          </a>
+          </section>
         </Link>
         <Link href="#Contato">
-          <a id="Contato">
+          <section id="Contato">
             <Image src="/contato.png" alt="Carlos Alberto ETI Contato" width="2008" height="1180" />
-          </a>
+          </section>
         </Link>
       </main>
       <Footer />

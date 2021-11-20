@@ -8,7 +8,7 @@ export default function Footer() {
             <span className={styles.values}>2020</span>&nbsp;<span className={styles.delimiters}>&copy;</span>&nbsp;<span className={styles.values}>{new Date().getFullYear()}</span>
             <span className={styles.delimiters}>]</span>
             &nbsp;&nbsp;
-            <Link href="http://www.carlosalberto.eti.br">
+            <Link href="http://www.carlosalberto.eti.br" passHref>
                 <a>www.carlosalberto.eti.br</a>
             </Link>
       </footer>

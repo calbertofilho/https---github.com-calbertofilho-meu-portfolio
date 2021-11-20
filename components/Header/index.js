@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <header className={styles.header}>
           <div className={styles.logo}>
-            <Link href="#">
+            <Link href="#" passHref>
               <a><Image src="/logo.png" alt="Carlos Alberto ETI Logo" width="322" height="94" /></a>
             </Link>
           </div>

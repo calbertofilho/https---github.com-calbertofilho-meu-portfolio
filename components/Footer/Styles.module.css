@@ -1,0 +1,25 @@
+.footer {
+    background-color: #191A21;
+    color: #FFFFFF;
+    height: 30px;
+    padding: 0 20px;
+    font-weight: bold;
+    border-top: 2px solid #282A36;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.footer a {
+    color: #52B7DF;
+}
+
+.footer .delimiters {
+    color: #C26193;
+}
+
+.footer .values {
+    color: #7C5FA5;
+}

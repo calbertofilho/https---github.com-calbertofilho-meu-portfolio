@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import NavBar from '../NavBar'
+import Menu from '../Menu'
 import styles from './Styles.module.css'
 
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
               <a><Image src="/logo.png" alt="Carlos Alberto ETI Logo" width="322" height="94" /></a>
             </Link>
           </div>
-          <NavBar />
+          <Menu />
         </header>
     );
 }

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from './Styles.module.css'
 
-export default function Footer() {
+export default function NavBar() {
     return (
         <nav className={styles.menu}>
             <Link href="http://mail.lberto.eti.br/">

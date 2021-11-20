@@ -3,7 +3,7 @@ import Image from 'next/image'
 import NavBar from '../NavBar'
 import styles from './Styles.module.css'
 
-export default function Footer() {
+export default function Header() {
     return (
         <header className={styles.header}>
           <div className={styles.logo}>

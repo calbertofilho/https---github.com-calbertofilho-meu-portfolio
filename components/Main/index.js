@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './Styles.module.css'
 
-export default function Footer() {
+export default function Main() {
     return (
         <main className={styles.main}>
             <Link href="#Sobre">

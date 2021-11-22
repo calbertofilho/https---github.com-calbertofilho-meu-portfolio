@@ -14,6 +14,7 @@ export const Container = styled.div`
   cursor: pointer;
   border-radius: 5px;
   transition: all .5s ease-in-out;
+  overflow: hidden;
   @media screen and (max-width: 980px) {
     display: flex;
   }
@@ -27,26 +28,27 @@ export const Container = styled.div`
 export const Icon = styled.div`
   width: 20px;
   height: 3px;
+  background: ${props => props.open ? 'transparent' : '#52B7DF'};
   border-radius: 5px;
-  background: #52B7DF;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: ${props => props.open ? 'none' : '0 2px 5px rgba(0, 0, 0, 0.2)'};
   transition: all .5s ease-in-out;
+  transform: translateX(${props => props.open ? '30px' : '0'});
   &::before, &::after {
     content: '';
     position: absolute;
-    border-radius: 5px;
+    width: ${props => props.open ? '25px' : '14px'};
+    height: 3px;
     background: #1863FF;
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all .5s ease-in-out;
   }
   &::before {
-    transform: translateY(-8px);
-    width: 14px;
-    height: 3px;
+    transform: ${props => props.open ? 'translate(-33px, 1px) rotate(45deg)' : 'translateY(-8px)'};
+    transition-delay: 0.125s;
   }
   &::after {
-    transform: translateY(8px);
-    width: 9px;
-    height: 3px;
+    transform: ${props => props.open ? 'translate(-33px, 1px) rotate(315deg)' : 'translateY(8px)'};
+    transition-delay: 0.25s;
   }
 `;

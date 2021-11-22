@@ -36,7 +36,6 @@ export const Icon = styled.div`
   &::before, &::after {
     content: '';
     position: absolute;
-    width: ${props => props.open ? '25px' : '14px'};
     height: 3px;
     background: #1863FF;
     border-radius: 5px;
@@ -44,11 +43,13 @@ export const Icon = styled.div`
     transition: all .5s ease-in-out;
   }
   &::before {
-    transform: ${props => props.open ? 'translate(-33px, 1px) rotate(45deg)' : 'translateY(-8px)'};
+    transform: ${props => props.open ? 'translate(-33px, 0px) rotate(45deg)' : 'translateY(-8px)'};
+    width: ${props => props.open ? '26px' : '14px'};
     transition-delay: 0.125s;
   }
   &::after {
-    transform: ${props => props.open ? 'translate(-33px, 1px) rotate(315deg)' : 'translateY(8px)'};
+    transform: ${props => props.open ? 'translate(-33px, 0px) rotate(315deg)' : 'translateY(8px)'};
+    width: ${props => props.open ? '26px' : '9px'};
     transition-delay: 0.25s;
   }
 `;

@@ -32,7 +32,7 @@ export const Icon = styled.div`
   border-radius: 5px;
   box-shadow: ${props => props.open ? 'none' : '0 2px 5px rgba(0, 0, 0, 0.2)'};
   transition: all .5s ease-in-out;
-  transform: translateX(${props => props.open ? '30px' : '0'});
+  /* transform: translateX(${props => props.open ? '30px' : '0'}); */
   &::before, &::after {
     content: '';
     position: absolute;
@@ -43,12 +43,12 @@ export const Icon = styled.div`
     transition: all .5s ease-in-out;
   }
   &::before {
-    transform: ${props => props.open ? 'translate(-33px, 0px) rotate(45deg)' : 'translateY(-8px)'};
+    transform: ${props => props.open ? 'translate(-3px, 0px) rotate(45deg)' : 'translateY(-8px)'};
     width: ${props => props.open ? '26px' : '14px'};
     transition-delay: 0.125s;
   }
   &::after {
-    transform: ${props => props.open ? 'translate(-33px, 0px) rotate(315deg)' : 'translateY(8px)'};
+    transform: ${props => props.open ? 'translate(-3px, 0px) rotate(315deg)' : 'translateY(8px)'};
     width: ${props => props.open ? '26px' : '9px'};
     transition-delay: 0.25s;
   }

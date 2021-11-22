@@ -5,22 +5,22 @@ export default function Menu() {
   return (
     <Container>
       <NavBar>
-        <Link href="#" passHref>
-          <Item>Portfolio</Item>
-        </Link>&nbsp;
-        <Link href="#" passHref>
-          <Item>Download</Item>
-        </Link>&nbsp;
-        <Link href="#" passHref>
-          <Item>App</Item>
-        </Link>&nbsp;
-        <Link href="#" passHref>
-          <Item>Sobre</Item>
-        </Link>&nbsp;
-        <Link href="#" passHref>
+        <Link href="#contato" passHref>
           <Item>Contato</Item>
         </Link>&nbsp;
-        <Link href="#" passHref>
+        <Link href="#sobre" passHref>
+          <Item>Sobre</Item>
+        </Link>&nbsp;
+        <Link href="#portfolio" passHref>
+          <Item>Portfolio</Item>
+        </Link>&nbsp;
+        <Link href="#download" passHref>
+          <Item>Download</Item>
+        </Link>&nbsp;
+        <Link href="#app" passHref>
+          <Item>App</Item>
+        </Link>&nbsp;
+        <Link href="mail.lberto.eti.br" passHref>
           <Item>@</Item>
         </Link>
       </NavBar>

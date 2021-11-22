@@ -7,7 +7,7 @@ export default function Logo() {
   return (
     <Container>
       <Link href="/" passHref>
-        <Anchor><Image src={MyLogo} alt="Carlos Alberto ETI Logo" width={322} height={94} placeholder="blur" /></Anchor>
+        <Anchor><Image src={MyLogo} alt="Carlos Alberto ETI Logo" width={322} height={94} placeholder="blur" loading="lazy" /></Anchor>
       </Link>
     </Container>
   );

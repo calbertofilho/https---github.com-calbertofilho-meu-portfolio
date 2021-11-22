@@ -20,7 +20,7 @@ export default function Menu() {
         <Link href="#app" passHref>
           <Item>App</Item>
         </Link>&nbsp;
-        <Link href="mail.lberto.eti.br" passHref>
+        <Link href="https://mail.lberto.eti.br" passHref>
           <Item>@</Item>
         </Link>
       </NavBar>

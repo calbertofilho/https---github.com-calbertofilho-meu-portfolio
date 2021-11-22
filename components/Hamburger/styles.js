@@ -6,12 +6,21 @@ export const Container = styled.div`
   display: none;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  background: #191A21;
+  border: 2px solid #17181E;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   cursor: pointer;
+  border-radius: 5px;
   transition: all .5s ease-in-out;
-  @media screen and (max-width: 970px) {
+  @media screen and (max-width: 980px) {
     display: flex;
+  }
+  &:hover {
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
   }
 `;
 
@@ -19,25 +28,25 @@ export const Icon = styled.div`
   width: 20px;
   height: 3px;
   border-radius: 5px;
-  /* background: #FF3300;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  background: #52B7DF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all .5s ease-in-out;
   &::before, &::after {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 3px;
     border-radius: 5px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    background: #1863FF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: all .5s ease-in-out;
   }
   &::before {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
+    width: 14px;
+    height: 3px;
   }
   &::after {
-    transform: translateY(10px);
+    transform: translateY(8px);
+    width: 9px;
+    height: 3px;
   }
 `;

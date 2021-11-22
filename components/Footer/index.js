@@ -12,7 +12,7 @@ export default function Footer() {
       <Values>{new Date().getFullYear()}</Values>
       <Delimiters>]</Delimiters>
       &nbsp;&nbsp;
-      <Link href="http://www.carlosalberto.eti.br" passHref>
+      <Link href="/" passHref>
         <Anchor>www.carlosalberto.eti.br</Anchor>
       </Link>
     </Container>

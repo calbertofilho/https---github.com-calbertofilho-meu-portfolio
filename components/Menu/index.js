@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Hamburger } from '../../components';
 import { Container, Item, NavBar } from './styles';
 
 export default function Menu() {
@@ -25,7 +24,6 @@ export default function Menu() {
           <Item>@</Item>
         </Link>
       </NavBar>
-      <Hamburger />
     </Container>
   );
 }

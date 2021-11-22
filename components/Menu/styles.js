@@ -5,15 +5,14 @@ export const Container = styled.div`
   justify-content: right;
   padding: 10px 0 0 0;
   min-width: 50%;
-  /* border: 1px solid red; */
+  @media screen and (max-width: 980px) {
+    display: none;
+  }
 `;
 
 export const NavBar = styled.nav`
   display: flex;
   align-items: flex-end;
-  @media screen and (max-width: 970px) {
-    display: none;
-  }
 `;
 
 export const Item = styled.a`
@@ -24,15 +23,16 @@ export const Item = styled.a`
   text-decoration: none;
   letter-spacing: 2px;
   text-transform: uppercase;
+  border: 2px solid #17181E;
   border-radius: 15px;
   font-weight: bold;
-  border: 2px solid #17181E;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease-in-out;
   &:hover {
-    border: none;
-    background: rgba(0, 0, 0, 0.4);
+    color: #191A21;
     background: #FFFFFF;
     padding: 13px 20px;
-    color: #191A21;
-    border: 2px solid #282A36;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
   }
 `;

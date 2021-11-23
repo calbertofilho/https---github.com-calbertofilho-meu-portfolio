@@ -18,6 +18,7 @@ export const Bloco = styled.section`
   background-color: ${ (props) => props.bg };
   img {
     width: 40%;
+    height: auto;
   }
 `;
 
@@ -27,25 +28,20 @@ export default function Home() {
       <Header />
       <Content>
         <Contato id="contato" />
-{/* 
-        <Bloco id="contato" bg="#7fbd42">
-          <img src="/images/nodejs.png" alt="Node JS" />
-        </Bloco>
- */}
         <Bloco id="sobre" bg="#69f">
-          <img src="/images/bootstrap.png" alt="Bootstrap" />
+          <img src="/images/bootstrap.png" alt="Bootstrap" width={716} height={716} placeholder="blur" loading="lazy" />
           {/* <Image src={Bootstrap} alt="Bootstrap" width={716} height={716} placeholder="blur" loading="lazy" /> */}
         </Bloco>
         <Bloco id="portfolio" bg="#faa">
-          <img src="/images/sass.png" alt="Sass" />
+          <img src="/images/sass.png" alt="Sass" width={870} height={653} placeholder="blur" loading="lazy" />
           {/* <Image src={Sass} alt="Sass" width={870} height={653} placeholder="blur" loading="lazy" /> */}
         </Bloco>
         <Bloco id="download" bg="#aaa">
-          <img src="/images/ruby.png" alt="Ruby" />
+          <img src="/images/ruby.png" alt="Ruby" width={1316} height={536} placeholder="blur" loading="lazy" />
           {/* <Image src={Ruby} alt="Ruby" width={1316} height={536} placeholder="blur" loading="lazy" /> */}
         </Bloco>
         <Bloco id="app" bg="#414950">
-          <img src="/images/angular.png" alt="Angular" />
+          <img src="/images/angular.png" alt="Angular" width={1426} height={1511} placeholder="blur" loading="lazy" />
           {/* <Image src={Angular} alt="Angular" width={1426} height={1511} placeholder="blur" loading="lazy" /> */}
         </Bloco>
       </Content>

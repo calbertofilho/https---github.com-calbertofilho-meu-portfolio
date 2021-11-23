@@ -1,13 +1,16 @@
-import Image from 'next/image';
+import Head from 'next/head';
 import { Avatar, Card, Container, Conteudo, Detalhes, Icon } from './styles';
 
 export default function Contato() {
   return (
     <Container id="contato">
-      <Card>
+      <Head>
+        <script type="text/javascript" src="vanilla-tilt.js" async />
+      </Head>
+      <Card data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
         <Conteudo>
           <Avatar>
-            <img src="/images/perfil.png" height={500} width={500} alt="Avatar" />
+            <img src="/images/perfil.png" height={200} width={200} alt="Avatar" placeholder="blur" loading="lazy" />
           </Avatar>
           <Detalhes>
             <div>

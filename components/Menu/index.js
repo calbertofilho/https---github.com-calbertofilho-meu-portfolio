@@ -7,19 +7,19 @@ export default function Menu() {
       <NavBar>
         <Link href="#contato" passHref>
           <Item>Contato</Item>
-        </Link>&nbsp;
+        </Link>
         <Link href="#sobre" passHref>
           <Item>Sobre</Item>
-        </Link>&nbsp;
+        </Link>
         <Link href="#portfolio" passHref>
           <Item>Portfolio</Item>
-        </Link>&nbsp;
+        </Link>
         <Link href="#download" passHref>
           <Item>Download</Item>
-        </Link>&nbsp;
+        </Link>
         <Link href="#app" passHref>
           <Item>App</Item>
-        </Link>&nbsp;
+        </Link>
         <Link href="http://mail.lberto.eti.br/" passHref>
           <Item>@</Item>
         </Link>

@@ -18,6 +18,7 @@ export const NavBar = styled.nav`
 export const Item = styled.a`
   color: #FFFFFF;
   background: #191A21;
+  margin: 0 0 0 6px;
   padding: 10px 20px;
   font-size: 12px;
   text-decoration: none;

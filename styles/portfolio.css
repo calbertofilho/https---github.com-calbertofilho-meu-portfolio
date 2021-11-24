@@ -1,0 +1,19 @@
+section.sec3 {
+  padding: 100px;
+  display: block;
+  background: #161623;
+  color: #fff;
+}
+
+  section.sec3 h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    color: #7C5FA5;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+  
+  section.sec3 p {
+    font-size: 18px;
+  }

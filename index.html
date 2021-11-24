@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+		<meta http-equiv="Content-Language" content="pt-br">
+    <title>Carlos Alberto ETI</title>
+    <meta name="description" content="Especialista em Tecnologia da Informação" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512"  href="images/icons/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="images/icons/site.webmanifest" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/navbar.css" />
+		<link rel="stylesheet" href="styles/landing.css" />
+		<link rel="stylesheet" href="styles/about.css" />
+		<link rel="stylesheet" href="styles/portfolio.css" />
+		<link rel="stylesheet" href="styles/downloads.css" />
+		<link rel="stylesheet" href="styles/app.css" />
+		<link rel="stylesheet" href="styles/contact.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </head>
+
+	<body>
+<!--   Menu    -->
+		<div class="navbar">
+			<a class="channel" href="#"><img class="logo" src="images/logo.png" alt="logo" /></a>
+      <!-- Navegação -->
+			<ul id="menuLinks">
+				<li><a id="link1" class="about" href="#about">Sobre</a></li>
+				<li><a id="link2" class="portfolio" href="#portfolio">Portfolio</a></li>
+				<li><a id="link3" class="downloads" href="#downloads">Downloads</a></li>
+				<li><a id="link4" class="app" href="#app">App</a></li>
+				<li><a id="link5" class="contact" href="#contact">Contato</a></li>
+				<li><a id="link6" class="email" href="http://mail.lberto.eti.br/">@</a></li>
+			</ul>
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <script type="text/javascript">
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('.navbar');
+
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle('active');
+          navbar.classList.toggle('open');
+        })
+      </script>
+    </div>
+
+<!--  Seções   -->
+    <!-- Principal -->
+		<section class="sec1" id="home">
+			<div class="left-ball"></div>
+			<div class="right-ball"></div>
+			<div class="welcome">
+				<h2>BemVindo...</h2>
+			</div>
+		</section>
+    <!--   Sobre   -->
+    <section class="sec2" id="about">
+			<div class="container">
+				<div class="card" data-aos="fade" data-tilt data-tilt-max="25" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+					<div class="content">
+						<div class="avatar">
+							<img src="images/perfil.png" height="100px" width="100px" alt="avatar">
+						</div>
+						<div class="details">
+							<div>
+								<h2>ETI</h2>
+								<h3>Carlos Alberto</h3>
+							</div>
+							<div>
+								<i class="material-icons-outlined">phone</i>
+								<span>+55 85 98899-8844</span>
+							</div>
+							<div>
+								<i class="material-icons-outlined">public</i>
+								<span>carlosalberto.eti.br</span>
+							</div>
+							<div>
+								<i class="material-icons-outlined">email</i>
+								<span>carlos@lberto.eti.br</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about" data-aos="slide-left">
+					<div class="content">
+					  <h2>ETI</h2>
+						<h3>Perfil</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae magna ornare, consectetur lectus sit amet, dapibus ligula. Aenean pellentesque odio a lorem molestie, vitae laoreet augue mattis. Aliquam eleifend consequat magna, ac gravida nisi facilisis non.
+						</p>
+					</div>
+				</div>
+			</div>
+      <script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
+      <script type="text/javascript">
+        AOS.init();
+      </script>
+    </section>
+    <!-- Portfolio -->
+    <section class="sec3" id="portfolio">
+			<h1>Portfolio</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae magna ornare, consectetur lectus sit amet, dapibus ligula. Aenean pellentesque odio a lorem molestie, vitae laoreet augue mattis. Aliquam eleifend consequat magna, ac gravida nisi facilisis non. Praesent porta turpis sed tortor laoreet fringilla. Sed egestas enim neque, at convallis neque accumsan sit amet. Quisque pellentesque, leo non iaculis gravida, nulla lorem scelerisque ex, ac euismod justo nulla vel erat. Proin sit amet euismod ante, non vestibulum purus. Quisque semper ex sit amet pulvinar blandit. Quisque ligula dui, feugiat vel magna in, rhoncus dapibus magna. Vestibulum eleifend at nulla in dignissim. Nulla dictum purus id purus rhoncus tempor. Vestibulum a nunc vitae mi dapibus posuere.
+			</p>
+		</section>
+    <!-- Downloads -->
+    <section class="sec4" id="downloads">
+			<h1>Downloads</h1>
+    </section>
+    <!--    App    -->
+    <section class="sec5" id="app">
+			<h1>App React.JS</h1>
+    </section>
+    <!--  Contato  -->
+    <section class="sec6" id="contact">
+			<h1>Contato</h1>
+    </section>
+    <!-- Controle  -->
+    <script type="text/javascript">
+      const sections = document.querySelectorAll('section');
+      const navList = document.querySelectorAll('#menuLinks a');
+
+      window.addEventListener('scroll', () => {
+        let currentSection = '';
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+
+          if (pageYOffset >= sectionTop) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+
+        navList.forEach(a => {
+          a.classList.remove('active');
+          if (a.classList.contains(currentSection)) {
+            a.classList.add('active');
+          }
+        });
+      });
+    </script>
+
+<!--   Setas   -->
+    <svg class="arrows up">
+      <path class="a1" d="M0 32 L30 0 L60 32"></path>
+      <path class="a2" d="M0 52 L30 20 L60 52"></path>
+      <path class="a3" d="M0 72 L30 40 L60 72"></path>
+    </svg>
+    <svg class="arrows down active">
+      <path class="a1" d="M0 0 L30 32 L60 0"></path>
+      <path class="a2" d="M0 20 L30 52 L60 20"></path>
+      <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+    <!-- Exibição  -->
+		<script type="text/javascript">
+      const scrollup = document.querySelector('.arrows.up');
+      const scrolldown = document.querySelector('.arrows.down');
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      window.addEventListener('scroll', () => {
+        if (window.scrollY === 0) {
+          scrollup.classList.remove('active');
+        } else {
+          scrollup.classList.add('active');
+        }
+        if (Math.ceil(window.scrollY) === scrollable) {
+          scrolldown.classList.remove('active');
+        } else {
+          scrolldown.classList.add('active');
+        }
+      });
+    </script>
+    <!-- Controle  -->
+    <script type="text/javascript">
+      const arrowsDown = document.querySelector('.arrows.down.active');
+
+      hamburger.addEventListener("click", () => {
+        arrowsDown.classList.toggle('open');
+      })
+    </script>
+
+  </body>
+</html>

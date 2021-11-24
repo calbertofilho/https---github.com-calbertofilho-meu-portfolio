@@ -1,17 +1,26 @@
 section.sec4 {
-  background: linear-gradient(315deg, rgba(0,217,56,1) 0%, rgba(101,199,123,1) 35%, rgba(0,212,255,1) 100%);
-  background-size: cover;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
+  background-size: 300% 300%;
   background-attachment: fixed;
   padding: 100px;
-  height: 100%;
   display: block;
+  animation: gradient 10s ease alternate infinite;
+}
+
+@keyframes gradient {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
 }
 
   section.sec4 h1 {
     margin: 0;
     padding: 0;
     font-size: 60px;
-    color: #fd2928;
+    color: #fff;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: 100%;
   }

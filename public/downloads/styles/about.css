@@ -4,7 +4,7 @@ section.sec2 {
   background-attachment: fixed;
 }
 
-  .container {
+  section.sec2 .container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ section.sec2 {
     z-index: 1;
   }
 
-    .card, .about {
+    .card, section.sec2 .about {
       position: relative;
       box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
       border-radius: 15px;
@@ -99,19 +99,19 @@ section.sec2 {
             color: #121213;
           }
 
-      .about {
+      section.sec2 .about {
         width: 900px;
         height: 300px;
         margin: 50px 0;
       }
       
-        .about .content {
+        section.sec2 .about .content {
           padding: 20px;
           text-align: center;						
           transition: 0.5s;
         }
         
-        .about .content h2 {
+        section.sec2 .about .content h2 {
           position: absolute;
           top: -240px;
           right: -20px;
@@ -121,12 +121,12 @@ section.sec2 {
           z-index: -1;
         }
 
-        .about .content h3 {
+        section.sec2 .about .content h3 {
           font-size: 2.2em;
           color: #000;
         }
 
-        .about .content p {
+        section.sec2 .about .content p {
           font-size: 1em;
           color: #121213;
           font-weight: 300;

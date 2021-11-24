@@ -14,19 +14,26 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png" />
     <link rel="manifest" href="images/icons/site.webmanifest" />
 		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/navbar.css" />
+		<link rel="stylesheet" href="styles/landing.css" />
+		<link rel="stylesheet" href="styles/about.css" />
+		<link rel="stylesheet" href="styles/portfolio.css" />
+		<link rel="stylesheet" href="styles/downloads.css" />
+		<link rel="stylesheet" href="styles/app.css" />
+		<link rel="stylesheet" href="styles/contact.css" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<script rel="text/javascript" src="scripts/vanilla-tilt.js"></script>
 		<script rel="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script type="text/javascript">
 			function setActiveLink(setActive) {
 				var links = document.querySelectorAll("#menuLinks a");
-				Array.prototype.map.call(links, function(e) {
+				Array.prototype.map.call(links, (e) => {
 					e.className = "";
 					if (e.id == setActive)
 						e.className = "active";
 				})
 			}
-		</script>
+    </script>
 	</head>
 
 	<body>
@@ -35,12 +42,25 @@
 			<ul id="menuLinks">
 				<li><a id="link1" onClick="setActiveLink(this.id);" href="#about">Sobre</a></li>
 				<li><a id="link2" onClick="setActiveLink(this.id);" href="#portfolio">Portfolio</a></li>
-				<li><a id="link3" onClick="setActiveLink(this.id);" href="#download">Download</a></li>
+				<li><a id="link3" onClick="setActiveLink(this.id);" href="#downloads">Downloads</a></li>
 				<li><a id="link4" onClick="setActiveLink(this.id);" href="#app">App</a></li>
 				<li><a id="link5" onClick="setActiveLink(this.id);" href="#contact">Contato</a></li>
 				<li><a id="link6" onClick="setActiveLink(this.id);" href="http://mail.lberto.eti.br/">@</a></li>
 			</ul>
-		</div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <script type="text/javascript">
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('.navbar');
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle('active');
+          navbar.classList.toggle('open');
+        })
+      </script>
+    </div>
 		<section class="sec1" id="home">
 			<div class="left-ball"></div>
 			<div class="right-ball"></div>
@@ -78,7 +98,7 @@
 				<div class="about" data-aos="slide-left">
 					<div class="content">
 					  <h2>ETI</h2>
-						<h3>Carlos Alberto</h3>
+						<h3>Perfil</h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae magna ornare, consectetur lectus sit amet, dapibus ligula. Aenean pellentesque odio a lorem molestie, vitae laoreet augue mattis. Aliquam eleifend consequat magna, ac gravida nisi facilisis non.
 						</p>
@@ -102,7 +122,16 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae magna ornare, consectetur lectus sit amet, dapibus ligula. Aenean pellentesque odio a lorem molestie, vitae laoreet augue mattis. Aliquam eleifend consequat magna, ac gravida nisi facilisis non. Praesent porta turpis sed tortor laoreet fringilla. Sed egestas enim neque, at convallis neque accumsan sit amet. Quisque pellentesque, leo non iaculis gravida, nulla lorem scelerisque ex, ac euismod justo nulla vel erat. Proin sit amet euismod ante, non vestibulum purus. Quisque semper ex sit amet pulvinar blandit. Quisque ligula dui, feugiat vel magna in, rhoncus dapibus magna. Vestibulum eleifend at nulla in dignissim. Nulla dictum purus id purus rhoncus tempor. Vestibulum a nunc vitae mi dapibus posuere.
 			</p>
 		</section>
-		<script rel="text/javascript">
+		<section class="sec4" id="downloads">
+			<h1>Downloads</h1>
+    </section>
+		<section class="sec5" id="app">
+			<h1>App React.JS</h1>
+    </section>
+		<section class="sec6" id="contact">
+			<h1>Contato</h1>
+    </section>
+    <script rel="text/javascript">
 			AOS.init();
 		</script>
 	</body>

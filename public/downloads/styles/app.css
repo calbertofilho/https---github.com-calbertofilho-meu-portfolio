@@ -1,0 +1,15 @@
+section.sec5 {
+  padding: 100px;
+  height: 100%;
+  display: block;
+  background: #f5f5f5;
+}
+
+section.sec5 h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+

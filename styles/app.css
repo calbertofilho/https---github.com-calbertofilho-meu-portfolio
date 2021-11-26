@@ -1,14 +1,136 @@
-section.sec5 {
-  padding: 100px;
-  display: block;
-  background: #E7F2F8;
+:root {
+  /* Paleta de cores */
+  --bg-color: #CCDAEB;
+  --title-color: #323244;
+  --description-color: #91A1BA;
+
+  --first-color: #0D659D;
+  --input-color: #80868B;
+  --border-color: #DADCE0;
+
+  --app-font: 'Roboto', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.75rem;
 }
 
-section.sec5 h1 {
+::before, ::after {
+  box-sizing: border-box;
+}
+
+section.sec5 {
   margin: 0;
   padding: 0;
-  font-size: 60px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  width: 100%;
+  display: block;
+  background: var(--bg-color);
 }
 
+section.sec5 .header {
+  padding: 100px 0 0 100px;
+}
+
+section.sec5 .header h1 {
+  font-size: 4rem;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  color: var(--title-color);
+}
+
+section.sec5 .header h3 {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px black;
+  color: var(--description-color);
+}
+
+section.sec5 .content {
+  font-family: var(--app-font);
+  font-size: var(--normal-font-size);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+section.sec5 .content .app-form {
+  width: 360px;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  background: white;
+}
+
+section.sec5 .content .image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+section.sec5 .content .app-form .form_input {
+  position: relative;
+  height: 48px;
+  margin-bottom: 1.5rem;
+}
+
+section.sec5 .content .app-form .form_input .input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: var(--normal-font-size);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+}
+
+section.sec5 .content .app-form .form_input .label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0 0.25rem;
+  background-color: white;
+  color: var(--input-color);
+  font-size: var(--normal-font-size);
+  transition: 0.3s;
+}
+
+section.sec5 .content .app-form .button {
+  display: block;
+  margin-left: auto;
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  background-color: var(--first-color);
+  color: white;
+  font-size: var(--normal-font-size);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section.sec5 .content .app-form .button:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+section.sec5 .content .app-form .form_input .input:focus + .label {
+  top: -0.5rem;
+  left: 0.8rem;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+section.sec5 .content .app-form .form_input .input:not(:placeholder-shown).input:not(:focus) + .label {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+section.sec5 .content .app-form .form_input .input:focus {
+  border: 1.5px solid var(--first-color);
+}

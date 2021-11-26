@@ -1,21 +1,34 @@
-/* 
+:root {
+  /* Dimensões dos cubos */
+  --cube1_width: 100px;
+  --cube1_height: 100px;
+  --cube2_width: 200px;
+  --cube2_height: 200px;
+  /* Cores dos cubos */
+  --cube1_main: #7c5fa5;
+  --cube1_top: #0f0f18;
+  --cube2_main: #430c91;
+  --cube2_top: #110325;
+
+  --app-font: 'Roboto', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.75rem;
+}
+
 section.sec6 {
+  background: #161623;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #161623;
-  color: #fff;
-}
-*/
-
-section.sec6 {
-  padding: 100px;
-  display: block;
-  background: #161623;
+  flex-direction: column;
   color: #fff;
 }
 
-  section.sec6 h1 {
+section.sec6 .header {
+  padding: 100px 0 0 100px;
+}
+
+  section.sec6 .header h1 {
     margin: 0;
     padding: 0;
     font-size: 60px;
@@ -23,3 +36,208 @@ section.sec6 {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: 100%;
   }
+
+  section.sec6 .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+  
+  section.sec6 .cube1, section.sec6 .cube2 {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 5s linear infinite;
+  }
+
+  section.sec6 .cube1 {
+    width: var(--cube1_width);
+    height: var(--cube1_height);
+  }
+
+  section.sec6 .cube2 {
+    width: var(--cube2_width);
+    height: var(--cube2_height);
+  }
+
+  @keyframes animate {
+    from {
+      transform: rotateX(-30deg) rotateY(0deg);
+    }
+    to {
+      transform: rotateX(-30deg) rotateY(360deg);
+    }
+  }
+
+    section.sec6 .cube1 .top, section.sec6 .cube2 .top {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    section.sec6 .cube1 .top {
+      width: var(--cube1_width);
+      height: var(--cube1_height);
+      transform: rotateX(90deg) translateZ(calc(var(--cube1_width) / 2));
+      background: var(--cube1_top);
+    }
+
+    section.sec6 .cube2 .top {
+      width: var(--cube2_width);
+      height: var(--cube2_height);
+      transform: rotateX(90deg) translateZ(calc(var(--cube2_width) / 2));
+      background: var(--cube2_top);
+    }
+
+    section.sec6 .cube1 div, section.sec6 .cube2 div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+    }
+
+    section.sec6 .cube1 div span, section.sec6 .cube2 div span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    section.sec6 .cube1 div span{
+      transform: rotateY(calc(90deg * var(--i))) translateZ(calc(var(--cube1_width) / 2));
+      background: linear-gradient(var(--cube1_top), var(--cube1_main));
+    }
+
+    section.sec6 .cube2 div span {
+      transform: rotateY(calc(90deg * var(--i))) translateZ(calc(var(--cube2_width) / 2));
+      background: linear-gradient(var(--cube2_top), var(--cube2_main));
+    }
+
+    section.sec6 .cube1 .top::before, section.sec6 .cube2 .top::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: blur(20px);
+    }
+
+    section.sec6 .cube1 .top::before{
+      width: var(--cube1_width);
+      height: var(--cube1_height);
+      transform: translateZ(calc(var(--cube1_height) * -1.5));
+      background: var(--cube1_main);
+      box-shadow: 0 0 100px rgba(124, 95, 165, 0.2),
+                  0 0 200px rgba(124, 95, 165, 0.4),
+                  0 0 300px rgba(124, 95, 165, 0.6),
+                  0 0 400px rgba(124, 95, 165, 0.8),
+                  0 0 500px rgba(124, 95, 165, 1);
+    }
+
+    section.sec6 .cube2 .top::before {
+      width: var(--cube2_width);
+      height: var(--cube2_height);
+      transform: translateZ(calc(var(--cube2_height) * -1.5));
+      background: var(--cube2_main);
+      box-shadow: 0 0 100px rgba(67, 12, 145, 0.2),
+                  0 0 200px rgba(67, 12, 145, 0.4),
+                  0 0 300px rgba(67, 12, 145, 0.6),
+                  0 0 400px rgba(67, 12, 145, 0.8),
+                  0 0 500px rgba(67, 12, 145, 1);
+    }
+
+    section.sec6 .content .contact-form {
+    width: 780px;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  section.sec6 .content .contact-form .form_input {
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
+  }
+  
+  section.sec6 .content .contact-form .form_message {
+    position: relative;
+    height: 150px;
+    margin-bottom: 1.5rem;
+  }
+  
+  section.sec6 .content .contact-form .form_input .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: var(--normal-font-size);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
+  }
+  
+  section.sec6 .content .contact-form .form_input .label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 0.25rem;
+    background-color: white;
+    color: var(--input-color);
+    font-size: var(--normal-font-size);
+    transition: 0.3s;
+  }
+  
+  section.sec6 .content .contact-form .button {
+    display: block;
+    margin-left: auto;
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    background-color: var(--first-color);
+    color: white;
+    font-size: var(--normal-font-size);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  section.sec6 .content .contact-form .button:hover {
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  }
+  
+  section.sec6 .content .contact-form .form_input .input:focus + .label {
+    top: -0.5rem;
+    left: 0.8rem;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+  }
+  
+  section.sec6 .content .contact-form .form_input .input:not(:placeholder-shown).input:not(:focus) + .label {
+    top: -0.5rem;
+    left: 0.8rem;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+  }
+  
+  section.sec6 .content .contact-form .form_input .input:focus {
+    border: 1.5px solid var(--first-color);
+  }
+  

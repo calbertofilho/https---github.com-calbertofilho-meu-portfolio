@@ -1,10 +1,10 @@
 section.sec4 {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
-  background-size: 300% 300%;
+  background-size: 2000% 2000%;
   background-attachment: fixed;
   padding: 100px;
   display: block;
-  animation: gradient 10s ease alternate infinite;
+  animation: gradient 5s ease-in-out alternate infinite;
 }
 
 @keyframes gradient {

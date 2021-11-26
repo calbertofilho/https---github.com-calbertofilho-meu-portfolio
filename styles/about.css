@@ -10,7 +10,7 @@ section.sec2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    width: 1200px;
     flex-wrap: wrap;
     z-index: 1;
   }
@@ -131,4 +131,3 @@ section.sec2 {
           color: #121213;
           font-weight: 300;
         }
-

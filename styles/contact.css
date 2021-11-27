@@ -164,19 +164,19 @@ section.sec6 .header {
     backdrop-filter: blur(5px);
   }
 
-  section.sec6 .content .contact-form .form_input {
+  section.sec6 .content .contact-form .form_inputs {
     position: relative;
     height: 48px;
     margin-bottom: 1.5rem;
   }
   
-  section.sec6 .content .contact-form .form_message {
+  section.sec6 .content .contact-form .form_messages {
     position: relative;
     height: 150px;
     margin-bottom: 1.5rem;
   }
   
-  section.sec6 .content .contact-form .form_input .input {
+  section.sec6 .content .contact-form .form_inputs .inputs {
     position: absolute;
     top: 0;
     left: 0;
@@ -191,7 +191,7 @@ section.sec6 .header {
     z-index: 1;
   }
   
-  section.sec6 .content .contact-form .form_input .label {
+  section.sec6 .content .contact-form .form_inputs .labels {
     position: absolute;
     left: 1rem;
     top: 1rem;
@@ -202,7 +202,7 @@ section.sec6 .header {
     transition: 0.3s;
   }
   
-  section.sec6 .content .contact-form .button {
+  section.sec6 .content .contact-form .buttons {
     display: block;
     margin-left: auto;
     padding: 0.75rem 2rem;
@@ -216,11 +216,11 @@ section.sec6 .header {
     transition: 0.3s;
   }
   
-  section.sec6 .content .contact-form .button:hover {
+  section.sec6 .content .contact-form .buttons:hover {
     box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
   }
   
-  section.sec6 .content .contact-form .form_input .input:focus + .label {
+  section.sec6 .content .contact-form .form_inputs .inputs:focus + .labels {
     top: -0.5rem;
     left: 0.8rem;
     color: var(--first-color);
@@ -229,7 +229,7 @@ section.sec6 .header {
     z-index: 10;
   }
   
-  section.sec6 .content .contact-form .form_input .input:not(:placeholder-shown).input:not(:focus) + .label {
+  section.sec6 .content .contact-form .form_inputs .inputs:not(:placeholder-shown).inputs:not(:focus) + .labels {
     top: -0.5rem;
     left: 0.8rem;
     font-size: var(--small-font-size);
@@ -237,7 +237,7 @@ section.sec6 .header {
     z-index: 10;
   }
   
-  section.sec6 .content .contact-form .form_input .input:focus {
+  section.sec6 .content .contact-form .form_inputs .inputs:focus {
     border: 1.5px solid var(--first-color);
   }
   

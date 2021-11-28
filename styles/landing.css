@@ -1,16 +1,26 @@
 :root {
-  --h1-font-size: 4rem;
+  --h2-font-size: 4rem;
+  --h2-length: 685.97px;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 700px) {
   :root {
-    --h1-font-size: 3rem;
+    --h2-font-size: 3rem;
+    --h2-length: 566.683px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 580px) {
   :root {
-    --h1-font-size: 2rem;
+    --h2-font-size: 2rem;
+    --h2-length: 432.667px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    --h2-font-size: 1rem;
+    --h2-length: 298.833px;
   }
 }
 
@@ -50,7 +60,7 @@ section.sec1 {
       position: relative;
       color: #00ccff;
       letter-spacing: 15px;
-      font-size: 4rem;
+      font-size: var(--h2-font-size);
       text-transform: uppercase;
       animation: typing 8s steps(11) infinite;
       overflow: hidden;
@@ -61,7 +71,7 @@ section.sec1 {
         width: 0;
       }
       30%, 60% {
-        width: 685.97px;
+        width: var(--h2-length);
       }
     }
 

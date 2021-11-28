@@ -159,24 +159,16 @@
           </div>
         </div>
 
-        <form action="" class="contact-form" method="post">
-          <div class="form_inputs">
-            <input type="text" class="inputs" placeholder=" ">
-            <label for="" class="labels">Nome</label>
-          </div>
-          <div class="form_inputs">
-            <input type="tel" class="inputs" placeholder=" ">
-            <label for="" class="labels">Telefone</label>
-          </div>
-          <div class="form_inputs">
-            <input type="email" class="inputs" placeholder=" ">
-            <label for="" class="labels">e-mail</label>
-          </div>
-          <div class="form_message">
-            <textarea class="inputs" placeholder=" "></textarea>
-            <label for="" class="labels">Mensagem</label>
-          </div>
-          <input type="submit" class="buttons" value="Enviar">
+        <form action="#" class="contact-form" method="post">
+          <input type="text" name="Nome" class="contact-field" placeholder=" " required>
+          <label for="" class="contact-label">Nome</label>
+          <input type="email" name="email" class="contact-field" placeholder=" " required>
+          <label for="" class="contact-label">e-mail</label>
+          <input type="tel" name="celular" class="contact-field" placeholder=" ">
+          <label for="" class="contact-label">Celular</label>
+          <textarea name="message" class="contact-field" required></textarea>
+          <label for="" class="contact-label">Mensagem</label>
+          <input type="submit" class="contact-button" value="Enviar">
         </form>
 
         <div class="cube2">

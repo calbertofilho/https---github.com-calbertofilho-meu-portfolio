@@ -1,7 +1,7 @@
 :root {
   /* Dimensões dos cubos */
   --cube1_width: 100px;
-  --cube1_height: 100px;
+  --cube1_height: 100px; 
   --cube2_width: 200px;
   --cube2_height: 200px;
   /* Cores dos cubos */
@@ -9,10 +9,15 @@
   --cube1_top: #0f0f18;
   --cube2_main: #430c91;
   --cube2_top: #110325;
+  /* Paleta de cores */
+  --contact-title-color: #7C5FA5;
+  --contact-first-color: #430c91;
+  --contact-input-color: #80868B;
+  --contact-border-color: #DADCE0;
 
-  --app-font: 'Roboto', sans-serif;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.75rem;
+  --contact-font: 'Roboto', sans-serif;
+  --contact-normal-font-size: 1rem;
+  --contact-small-font-size: 0.75rem;
 }
 
 section.sec6 {
@@ -32,14 +37,15 @@ section.sec6 .header {
     margin: 0;
     padding: 0;
     font-size: 60px;
-    color: #7C5FA5;
+    color: var(--contact-title-color);
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: 100%;
   }
 
   section.sec6 .content {
     display: flex;
-    justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
     align-items: center;
     height: 100%;
   }
@@ -182,8 +188,8 @@ section.sec6 .header {
     left: 0;
     width: 100%;
     height: 100%;
-    font-size: var(--normal-font-size);
-    border: 1px solid var(--border-color);
+    font-size: var(--contact-normal-font-size);
+    border: 1px solid var(--contact-border-color);
     border-radius: 0.5rem;
     outline: none;
     padding: 1rem;
@@ -197,8 +203,8 @@ section.sec6 .header {
     top: 1rem;
     padding: 0 0.25rem;
     background-color: white;
-    color: var(--input-color);
-    font-size: var(--normal-font-size);
+    color: var(--contact-input-color);
+    font-size: var(--contact-normal-font-size);
     transition: 0.3s;
   }
   
@@ -208,9 +214,9 @@ section.sec6 .header {
     padding: 0.75rem 2rem;
     outline: none;
     border: none;
-    background-color: var(--first-color);
+    background-color: var(--contact-first-color);
     color: white;
-    font-size: var(--normal-font-size);
+    font-size: var(--contact-normal-font-size);
     border-radius: 0.5rem;
     cursor: pointer;
     transition: 0.3s;
@@ -223,8 +229,8 @@ section.sec6 .header {
   section.sec6 .content .contact-form .form_inputs .inputs:focus + .labels {
     top: -0.5rem;
     left: 0.8rem;
-    color: var(--first-color);
-    font-size: var(--small-font-size);
+    color: var(--contact-first-color);
+    font-size: var(--contact-small-font-size);
     font-weight: 500;
     z-index: 10;
   }
@@ -232,12 +238,20 @@ section.sec6 .header {
   section.sec6 .content .contact-form .form_inputs .inputs:not(:placeholder-shown).inputs:not(:focus) + .labels {
     top: -0.5rem;
     left: 0.8rem;
-    font-size: var(--small-font-size);
+    font-size: var(--contact-small-font-size);
     font-weight: 500;
     z-index: 10;
   }
   
   section.sec6 .content .contact-form .form_inputs .inputs:focus {
-    border: 1.5px solid var(--first-color);
+    border: 1.5px solid var(--contact-first-color);
   }
-  
+
+  @media screen and (max-width: 1250px) {
+    :root {
+      --cube1_width: 50px;
+      --cube1_height: 50px; 
+      --cube2_width: 100px;
+      --cube2_height: 100px;
+    }
+  }

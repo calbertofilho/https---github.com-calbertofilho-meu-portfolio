@@ -32,9 +32,9 @@ section.sec1 {
 
     section.sec1 .welcome h2 {
       position: relative;
-      color: #fd2928;
+      color: #00ccff;
       letter-spacing: 15px;
-      font-size: 4em;
+      font-size: 4rem;
       text-transform: uppercase;
       animation: typing 8s steps(11) infinite;
       overflow: hidden;

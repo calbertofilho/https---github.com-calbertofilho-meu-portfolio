@@ -37,7 +37,7 @@ section.sec6 .header {
   section.sec6 .header h1 {
     margin: 0;
     padding: 0;
-    font-size: 60px;
+    font-size: 4rem;
     color: var(--contact-title-color);
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: 100%;

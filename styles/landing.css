@@ -1,3 +1,19 @@
+:root {
+  --h1-font-size: 4rem;
+}
+
+@media screen and (max-width: 570px) {
+  :root {
+    --h1-font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    --h1-font-size: 2rem;
+  }
+}
+
 section.sec1 {
   display: flex;
   justify-content: center;

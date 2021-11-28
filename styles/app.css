@@ -11,6 +11,19 @@
   --app-font: 'Roboto', sans-serif;
   --normal-font-size: 1rem;
   --small-font-size: 0.75rem;
+  --h1-font-size: 4rem;
+}
+
+@media screen and (max-width: 570px) {
+  :root {
+    --h1-font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    --h1-font-size: 2rem;
+  }
 }
 
 ::before, ::after {
@@ -29,7 +42,7 @@ section.sec5 .header {
 }
 
 section.sec5 .header h1 {
-  font-size: 4rem;
+  font-size: var(--h1-font-size);
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   width: 100%;
   color: var(--title-color);

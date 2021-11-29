@@ -64,6 +64,8 @@ section.sec1 {
       text-transform: uppercase;
       animation: typing 8s steps(11) infinite;
       overflow: hidden;
+      pointer-events: none;
+      user-select: none;
     }
 
     @keyframes typing {

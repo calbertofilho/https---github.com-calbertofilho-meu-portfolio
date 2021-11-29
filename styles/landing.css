@@ -1,28 +1,28 @@
 :root {
   --h2-font-size: 4rem;
-  --h2-length: 685.97px;
+  --h2-length: 748.33px;
 }
 
-@media screen and (max-width: 700px) {
-  :root {
-    --h2-font-size: 3rem;
-    --h2-length: 566.683px;
+  @media screen and (max-width: 700px) {
+    :root {
+      --h2-font-size: 3rem;
+      --h2-length: 606.25px;
+    }
   }
-}
 
-@media screen and (max-width: 580px) {
-  :root {
-    --h2-font-size: 2rem;
-    --h2-length: 432.667px;
+  @media screen and (max-width: 580px) {
+    :root {
+      --h2-font-size: 2rem;
+      --h2-length: 464.17px;
+    }
   }
-}
 
-@media screen and (max-width: 450px) {
-  :root {
-    --h2-font-size: 1rem;
-    --h2-length: 298.833px;
+  @media screen and (max-width: 450px) {
+    :root {
+      --h2-font-size: 1rem;
+      --h2-length: 322.09px;
+    }
   }
-}
 
 section.sec1 {
   display: flex;
@@ -44,7 +44,7 @@ section.sec1 {
       width: 3px;
       height: 100%;
       background: #fff;
-      animation: blinkCursor 0.8s steps(3) infinite;
+      animation: blinkCursor 0.7s steps(3) infinite;
     }
 
     @keyframes blinkCursor {
@@ -62,7 +62,8 @@ section.sec1 {
       letter-spacing: 15px;
       font-size: var(--h2-font-size);
       text-transform: uppercase;
-      animation: typing 8s steps(11) infinite;
+      animation: typing 8s steps(12) infinite;
+      white-space: nowrap;
       overflow: hidden;
       pointer-events: none;
       user-select: none;

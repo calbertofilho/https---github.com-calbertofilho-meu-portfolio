@@ -219,11 +219,11 @@ section.sec6 .header {
       border: none;
       font-size: 1.7rem;
       background: linear-gradient(90deg, var(--contact-first-color), var(--contact-title-color)) left bottom/0 2px no-repeat,
-                  linear-gradient(90deg, var(--contact-first-color), var(--contact-first-color)) left bottom/100% 2px no-repeat,
+                  linear-gradient(90deg, rgba(0,0,0,0), var(--contact-first-color)) left bottom/100% 2px no-repeat,
                   linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,0)) left bottom/100% no-repeat;
       transition: background-size 0.3s ease;
     }
-    
+
     section.sec6 .wrapper .input-data textarea {
       resize: none;
       margin: 1rem 0;
@@ -250,10 +250,20 @@ section.sec6 .header {
     
     section.sec6 .wrapper .input-data .input:not(:placeholder-shown).input:not(:focus) + label {
       transform: translateY(-2.5rem);
+      color: var(--contact-title-color);
+    }
+
+    section.sec6 .wrapper .input-data .input:not(:placeholder-shown).input:not(:focus) {
+      background-size: 100% 2px, 100% 2px, 100%;
     }
     
     section.sec6 .wrapper .input-data .textarea:not(:placeholder-shown).textarea:not(:focus) + label {
       transform: translateY(-12.9rem);
+      color: var(--contact-title-color);
+    }
+    
+    section.sec6 .wrapper .input-data .textarea:not(:placeholder-shown).textarea:not(:focus) {
+      background-size: 100% 2px, 100% 2px, 100%;
     }
     
     section.sec6 .wrapper .input-data input:focus,
@@ -269,17 +279,15 @@ section.sec6 .header {
       margin-left: auto;
       outline: none;
       border: none;
-      color: var(--contact-first-color);
       cursor: pointer;
-      background: var(--contact-title-color);
+      color: var(--contact-title-color);
+      background: var(--contact-first-color);
       border: 2px solid var(--contact-first-color);
       transition: 0.3s;
     }
     
     section.sec6 .wrapper .btn-area .submit-btn:hover {
-      color: var(--contact-title-color);
-      background: var(--contact-first-color);
-      border: 2px solid var(--contact-first-color);
+      border: 2px solid var(--contact-title-color);
     }
 
   @media screen and (max-width: 1250px) {

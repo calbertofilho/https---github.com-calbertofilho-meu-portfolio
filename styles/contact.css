@@ -220,8 +220,10 @@ section.sec6 .header {
       transition: 0.3s;
     }
   
-    section.sec6 .content .contact-form label {
-      width: 50px;
+    section.sec6 .content .contact-form .message {
+      position: relative;
+      top: -10rem;
+      left: 1rem;
     }
 
     section.sec6 .content .contact-form .contact-button {
@@ -245,6 +247,17 @@ section.sec6 .header {
     section.sec6 .content .contact-form .contact-field:focus + .contact-label {
       top: -5.125rem;
       left: 0.8rem;
+      width: 50px;
+      color: var(--contact-first-color);
+      font-size: var(--contact-small-font-size);
+      font-weight: 500;
+      z-index: 10;
+    }
+    
+    section.sec6 .content .contact-form .contact-field:focus + .message {
+      top: -11.45rem;
+      left: 0.8rem;
+      width: 80px;
       color: var(--contact-first-color);
       font-size: var(--contact-small-font-size);
       font-weight: 500;

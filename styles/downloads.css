@@ -1,24 +1,8 @@
-:root {
-  --h1-font-size: 4rem;
-}
-
-@media screen and (max-width: 570px) {
-  :root {
-    --h1-font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  :root {
-    --h1-font-size: 2rem;
-  }
-}
-
 section.sec4 {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
   background-size: 2000% 2000%;
   background-attachment: fixed;
-  padding: 100px;
+  padding: 10rem;
   display: block;
   animation: gradient 5s ease-in-out alternate infinite;
 }

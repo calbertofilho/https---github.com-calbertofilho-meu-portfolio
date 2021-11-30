@@ -19,19 +19,6 @@
   --contact-font: 'Roboto', sans-serif;
   --contact-normal-font-size: 1rem;
   --contact-small-font-size: 0.75rem;
-  --h1-font-size: 4rem;
-}
-
-@media screen and (max-width: 570px) {
-  :root {
-    --h1-font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  :root {
-    --h1-font-size: 2rem;
-  }
 }
 
 section.sec6 {
@@ -169,113 +156,132 @@ section.sec6 .header {
                   0 0 500px rgba(67, 12, 145, 1);
     }
 
-    section.sec6 .content .contact-form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      max-width: 550px;
+    section.sec6 .form {
+      min-width: 20rem;
+      width: 55rem;
       padding: 4rem 2rem;
       border-radius: 1rem;
-      position: relative;
       box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
       overflow: hidden;
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       border-left: 1px solid rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(5px);
     }
+
+    section.sec6 .form .form-contact {
+      width: 100%;
+    }
+
+    section.sec6 .wrapper {
+      width: 100%;
+      flex: 2;
+      padding: 3rem;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    }
     
-    section.sec6 .content .contact-form .contact-field {
+    section.sec6 .wrapper .input-data {
       position: relative;
-      top: 0;
+      margin: 2rem 0;
+    }
+    
+    section.sec6 .wrapper .btn-area {
+      position: relative;
+      margin: 2rem 0;
+      display: flex;
+      justify-content: right;
+    }
+    
+    section.sec6 .wrapper .name {
+      height: 4rem;
+      width: 68%;
+    }
+    
+    section.sec6 .wrapper .tel {
+      height: 4rem;
+      width: 28%;
+      float: right;
+    }
+    
+    section.sec6 .wrapper .email {
+      height: 4rem;
+      width: 100%;
+    }
+    
+    section.sec6 .wrapper .message {
+      height: 15rem;
+    }
+    
+    section.sec6 .wrapper .input-data input,
+    section.sec6 .wrapper .input-data textarea {
+      height: 100%;
+      width: 100%;
+      color: var(--contact-title-color);
+      border: none;
+      font-size: 1.7rem;
+      background: linear-gradient(90deg, var(--contact-first-color), var(--contact-title-color)) left bottom/0 2px no-repeat,
+                  linear-gradient(90deg, var(--contact-first-color), var(--contact-first-color)) left bottom/100% 2px no-repeat,
+                  linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,0)) left bottom/100% no-repeat;
+      transition: background-size 0.3s ease;
+    }
+    
+    section.sec6 .wrapper .input-data textarea {
+      resize: none;
+      margin: 1rem 0;
+    }
+    
+    section.sec6 .wrapper .input-data label {
+      position: absolute;
+      bottom: 1rem;
       left: 0;
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: var(--contact-normal-font-size);
-      border: 1px solid var(--contact-border-color);
-      border-radius: 0.5rem;
-      color: var(--contact-input-color);
-      outline: none;
-      background: none;
-      z-index: 1;
+      color: var(--contact-first-color);
+      pointer-events: none;
+      font-size: 1.7rem;
     }
-
-    section.sec6 .content .contact-form input {
-      height: 48px;
+    
+    section.sec6 .wrapper .input-data input:focus + label {
+      transform: translateY(-2.5rem);
+      color: var(--contact-title-color);
     }
-
-    section.sec6 .content .contact-form textarea {
-      height: 150px;
+    
+    section.sec6 .wrapper .input-data textarea:focus + label {
+      transform: translateY(-12.9rem);
+      color: var(--contact-title-color);
     }
-
-    section.sec6 .content .contact-form .contact-label {
-      position: relative;
-      left: 1rem;
-      top: -3.7rem;
-      padding: 0 0.25rem;
-      background-color: var(--contact-bg-color);
-      color: var(--contact-input-color);
-      font-size: var(--contact-normal-font-size);
-      transition: 0.3s;
+    
+    section.sec6 .wrapper .input-data .input:not(:placeholder-shown).input:not(:focus) + label {
+      transform: translateY(-2.5rem);
     }
-  
-    section.sec6 .content .contact-form .message {
-      position: relative;
-      top: -10rem;
-      left: 1rem;
+    
+    section.sec6 .wrapper .input-data .textarea:not(:placeholder-shown).textarea:not(:focus) + label {
+      transform: translateY(-12.9rem);
     }
-
-    section.sec6 .content .contact-form .contact-button {
+    
+    section.sec6 .wrapper .input-data input:focus,
+    section.sec6 .wrapper .input-data textarea:focus {
+      background-size: 100% 2px, 100% 2px, 100%;
+    }
+    
+    section.sec6 .wrapper .btn-area .submit-btn {
+      font-size: 1.7rem;
+      padding: 1rem 3rem;
+      border-radius: 2.5rem;
       display: block;
       margin-left: auto;
-      padding: 0.75rem 2rem;
       outline: none;
       border: none;
-      background-color: var(--contact-first-color);
-      color: white;
-      font-size: var(--contact-normal-font-size);
-      border-radius: 0.5rem;
+      color: var(--contact-first-color);
       cursor: pointer;
+      background: var(--contact-title-color);
+      border: 2px solid var(--contact-first-color);
       transition: 0.3s;
     }
+    
+    section.sec6 .wrapper .btn-area .submit-btn:hover {
+      color: var(--contact-title-color);
+      background: var(--contact-first-color);
+      border: 2px solid var(--contact-first-color);
+    }
 
-    section.sec6 .content .contact-form .contact-button:hover {
-      box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
-    }
-
-    section.sec6 .content .contact-form .contact-field:focus + .contact-label {
-      top: -5.125rem;
-      left: 0.8rem;
-      width: 50px;
-      color: var(--contact-first-color);
-      font-size: var(--contact-small-font-size);
-      font-weight: 500;
-      z-index: 10;
-    }
-    
-    section.sec6 .content .contact-form .contact-field:focus + .message {
-      top: -11.45rem;
-      left: 0.8rem;
-      width: 80px;
-      color: var(--contact-first-color);
-      font-size: var(--contact-small-font-size);
-      font-weight: 500;
-      z-index: 10;
-    }
-    
-    section.sec6 .content .contact-form .contact-field:not(:placeholder-shown).inputs:not(:focus) + .contact-label {
-      top: 0.5rem;
-      left: 0.8rem;
-      font-size: var(--contact-small-font-size);
-      font-weight: 500;
-      z-index: 10;
-    }
-    
-    section.sec6 .content .contact-form .contact-field:focus {
-      border: 1.5px solid var(--contact-first-color);
-    }
-  
   @media screen and (max-width: 1250px) {
     :root {
       --cube1_width: 50px;

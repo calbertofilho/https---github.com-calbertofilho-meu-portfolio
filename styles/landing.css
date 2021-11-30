@@ -1,25 +1,25 @@
 :root {
-  --h2-font-size: 4rem;
+  --h2-font-size: 6.5rem;
   --h2-length: 748.33px;
 }
 
   @media screen and (max-width: 700px) {
     :root {
-      --h2-font-size: 3rem;
+      --h2-font-size: 4.9rem;
       --h2-length: 606.25px;
     }
   }
 
   @media screen and (max-width: 580px) {
     :root {
-      --h2-font-size: 2rem;
+      --h2-font-size: 3.3rem;
       --h2-length: 464.17px;
     }
   }
 
   @media screen and (max-width: 450px) {
     :root {
-      --h2-font-size: 1rem;
+      --h2-font-size: 1.7rem;
       --h2-length: 322.09px;
     }
   }

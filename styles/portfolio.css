@@ -1,21 +1,21 @@
 :root {
-  --h1-font-size: 4rem;
+  --h1-font-size: 6rem;
 }
 
 @media screen and (max-width: 570px) {
   :root {
-    --h1-font-size: 3rem;
+    --h1-font-size: 5rem;
   }
 }
 
 @media screen and (max-width: 400px) {
   :root {
-    --h1-font-size: 2rem;
+    --h1-font-size: 4rem;
   }
 }
 
 section.sec3 {
-  padding: 100px;
+  padding: 10rem;
   display: block;
   background: #161623;
   color: #fff;
@@ -31,5 +31,5 @@ section.sec3 {
   }
   
   section.sec3 p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }

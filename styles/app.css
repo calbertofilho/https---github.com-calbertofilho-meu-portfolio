@@ -9,21 +9,8 @@
   --border-color: #DADCE0;
 
   --app-font: 'Roboto', sans-serif;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.75rem;
-  --h1-font-size: 4rem;
-}
-
-@media screen and (max-width: 570px) {
-  :root {
-    --h1-font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  :root {
-    --h1-font-size: 2rem;
-  }
+  --normal-font-size: 1.5rem;
+  --small-font-size: 1rem;
 }
 
 ::before, ::after {
@@ -38,19 +25,19 @@ section.sec5 {
 }
 
 section.sec5 .header {
-  padding: 100px 0 0 100px;
+  padding: 10rem 0 0 10rem;
 }
 
 section.sec5 .header h1 {
   font-size: var(--h1-font-size);
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
   width: 100%;
   color: var(--title-color);
 }
 
 section.sec5 .header h3 {
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 2px black;
+  font-size: 2.5rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
   color: var(--description-color);
 }
 
@@ -64,10 +51,11 @@ section.sec5 .content {
 }
 
 section.sec5 .content .app-form {
-  width: 360px;
+  min-width: 20rem;
+  width: 36rem;
   padding: 4rem 2rem;
   border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.5);
   background: white;
 }
 
@@ -79,7 +67,7 @@ section.sec5 .content .image img {
 
 section.sec5 .content .app-form .form_input {
   position: relative;
-  height: 48px;
+  height: 4.8rem;
   margin-bottom: 1.5rem;
 }
 
@@ -124,7 +112,7 @@ section.sec5 .content .app-form .button {
 }
 
 section.sec5 .content .app-form .button:hover {
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 3.6rem rgba(0, 0, 0, 0.15);
 }
 
 section.sec5 .content .app-form .form_input .input:focus + .label {
@@ -145,5 +133,5 @@ section.sec5 .content .app-form .form_input .input:not(:placeholder-shown).input
 }
 
 section.sec5 .content .app-form .form_input .input:focus {
-  border: 1.5px solid var(--first-color);
+  border: 0.15rem solid var(--first-color);
 }

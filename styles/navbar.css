@@ -122,7 +122,7 @@
       transition-delay: 0.05s;
     }
 
-@media screen and (max-width: 97rem) {
+@media screen and (max-width: 970px) {
   .hamburger {
     display: flex;
   }

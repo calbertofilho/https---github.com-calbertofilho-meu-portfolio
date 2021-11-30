@@ -236,6 +236,8 @@ section.sec6 .header {
       color: var(--contact-first-color);
       pointer-events: none;
       font-size: 1.7rem;
+      transition: transform 0.3s ease,
+                  color 0.3s ease;
     }
     
     section.sec6 .wrapper .input-data input:focus + label {

@@ -63,7 +63,7 @@ body {
 	}
 }
 
-@media screen and (hover: none) {
+@media (hover: none) and (pointer: coarse) {
 	.container {
 		background: linear-gradient(90deg, var(--gradient-start-color), var(--gradient-end-color));
 		animation: changeColor 5s linear infinite;

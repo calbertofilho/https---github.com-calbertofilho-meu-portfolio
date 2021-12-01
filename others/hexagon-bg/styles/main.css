@@ -1,7 +1,7 @@
 :root {
 	--main-bg-color: #262626;
-	--gradient-start-color: #335bf4;
-	--gradient-end-color: #2ae9c9;
+	--gradient-start-color: #e91e63;
+	--gradient-end-color: #2196f3;
 }
 
 body {
@@ -63,6 +63,7 @@ body {
 	}
 }
 
+/* Se o dispositivo não tem um apontador ou se tem qualquer tipo de apontador, mas ele é do tipo grosseiro */
 @media (hover: none), (any-hover: hover) and (pointer: coarse) {
 	.container {
 		background: linear-gradient(90deg, var(--gradient-start-color), var(--gradient-end-color));
@@ -73,3 +74,19 @@ body {
 		display: none;
 	}
 }
+
+
+/* Se o dispositivo esta na orientação RETRATO */
+@media screen and (orientation: portrait) {}
+/* Se o dispositivo esta na orientação PAISAGEM */
+@media screen and (orientation: landscape) {}
+/* Se o dispositivo tem com comprimento máximo da tela de 1024px     LAPTOP     */
+@media screen and (max-width: 1024px) {}
+/* Se o dispositivo tem com comprimento máximo da tela de 768px      TABLET     */
+@media screen and (max-width: 768px) {}
+/* Se o dispositivo tem com comprimento máximo da tela de 425px     CELULAR G   */
+@media screen and (max-width: 425px) {}
+/* Se o dispositivo tem com comprimento máximo da tela de 375px     CELULAR M   */
+@media screen and (max-width: 375px) {}
+/* Se o dispositivo tem com comprimento máximo da tela de 320px     CELULAR P   */
+@media screen and (max-width: 320px) {}

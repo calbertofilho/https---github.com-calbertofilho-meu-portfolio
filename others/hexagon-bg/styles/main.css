@@ -101,12 +101,23 @@ body {
 	}
 }
 
+.main {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  vertical-align: bottom;
+  z-index: 0;
+}
+
 .goal {
   overflow: hidden;
   display: flex;
+  width: 100%;
+  max-width: 1260px;
   align-items: flex-start;
   justify-content: space-between;
-  vertical-align: bottom;
   z-index: 0;
 }
 

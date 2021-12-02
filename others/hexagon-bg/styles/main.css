@@ -3,20 +3,47 @@
 	--gradient-start-color: #e91e63;
 	--gradient-end-color: #2196f3;
 }
+/* Zerando os parametros do browser */
+  /* Zerando todos os parâmetros */
+    * {
+      margin: 0; padding: 0;
+      text-transform: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      outline: none; border: none;
+      background: #fff; color: #000;
+      transition: none; transition-delay: 0s;
+    }
+  /* Fim */
+  /* Definindo fontes para usar REM e o SnapIn no eixo Y */
+    html {
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      scroll-snap-type: y proximity;
+    }
+  /* Fim */
+  /* Ocultando as barras de rolagem */
+    html::-webkit-scrollbar {
+      display: none;
+    }
+  /* Fim */
+/* Fim */
 
 body {
-	margin: 0; padding: 0;
-	min-height: 100vh;
-	overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .container {
-	background: var(--main-bg-color);
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	position: relative;
+  background: var(--main-bg-color);
+  overflow: hidden;
 }
 
 .hex-grid {
@@ -76,17 +103,18 @@ body {
 }
 
 
+
 /* Se o dispositivo esta na orientação RETRATO */
 @media screen and (orientation: portrait) {}
 /* Se o dispositivo esta na orientação PAISAGEM */
 @media screen and (orientation: landscape) {}
-/* Se o dispositivo tem com comprimento máximo da tela de 1024px     LAPTOP     */
+/* Se o dispositivo tem com comprimento máximo da tela de 1024px      LAPTOP       */
 @media screen and (max-width: 1024px) {}
-/* Se o dispositivo tem com comprimento máximo da tela de 768px      TABLET     */
+/* Se o dispositivo tem com comprimento máximo da tela de 768px       TABLET       */
 @media screen and (max-width: 768px) {}
-/* Se o dispositivo tem com comprimento máximo da tela de 425px     CELULAR G   */
+/* Se o dispositivo tem com comprimento máximo da tela de 425px      CELULAR G     */
 @media screen and (max-width: 425px) {}
-/* Se o dispositivo tem com comprimento máximo da tela de 375px     CELULAR M   */
+/* Se o dispositivo tem com comprimento máximo da tela de 375px      CELULAR M     */
 @media screen and (max-width: 375px) {}
-/* Se o dispositivo tem com comprimento máximo da tela de 320px     CELULAR P   */
+/* Se o dispositivo tem com comprimento máximo da tela de 320px      CELULAR P     */
 @media screen and (max-width: 320px) {}

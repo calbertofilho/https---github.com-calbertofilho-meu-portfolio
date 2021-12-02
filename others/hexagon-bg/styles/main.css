@@ -11,8 +11,8 @@
       text-decoration: none;
       box-sizing: border-box;
       font-family: sans-serif;
-      outline: none; border: none;
-      background: #fff; color: #000;
+      font-weight: normal;
+      border: none; outline: none;
       transition: none; transition-delay: 0s;
     }
   /* Fim */
@@ -33,25 +33,36 @@
 
 body {
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.container {
-	position: relative;
+.wrapper {
+  display: inline-block;
+  position: relative;
+	width: 100%; height: 100%;
+  padding: 5.5rem;
+  z-index: 0;
+}
+
+.background {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
   background: var(--main-bg-color);
   overflow: hidden;
+  z-index: 0;
 }
 
 .hex-grid {
-	height: 100vh;
+  height: 100vh;
 }
 
 .hex-grid .grid {
-	position: absolute;
+  position: absolute;
 	top: 0; left: 0;
 	background: url(../images/grid.svg) repeat;
 	background-size: 500px;
@@ -60,7 +71,7 @@ body {
 }
 
 .hex-grid .light {
-	position: absolute;
+  position: absolute;
 	width: 15em; height: 15em;
 	top: 50%; left: 50%;
 	transform: translate(-50%, -50%);
@@ -71,7 +82,7 @@ body {
 }
 
 .hex-grid .light::before {
-	content: '';
+  content: '';
 	position: absolute;
 	width: 150%; height: 150%;
 	top: 50%; left: 50%;
@@ -82,17 +93,263 @@ body {
 }
 
 @keyframes changeColor {
-	from {
-		filter: hue-rotate(0deg);
+  from {
+    filter: hue-rotate(0deg);
 	}
 	to {
-		filter: hue-rotate(365deg);
+    filter: hue-rotate(365deg);
 	}
 }
 
+.goal {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  vertical-align: bottom;
+  z-index: 0;
+}
+
+section {
+  padding: 1rem 7%;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 0.7rem 4rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #555;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+header {
+  width: 35rem;
+  height: 58rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(0.4rem);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+header .user {
+  padding-top: 2rem;
+}
+
+header .user img {
+  margin: 1rem 0;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.2);
+}
+
+header .user .name {
+  font-size: 3rem;
+  color: #fff;
+  padding-top: 5rem 0;
+}
+
+header .user .post {
+  font-size: 1.8rem;
+  color: #eee;
+  font-weight: lighter;
+}
+
+header .navbar {
+  padding: 1rem 3rem;
+}
+
+header .navbar ul li {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+header .navbar ul li a {
+  display: block;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1rem 2rem rgba(165, 115, 115, 0.2);
+  border-radius: 1rem;
+  transition: all 0.2s linear;
+}
+
+header .navbar ul li a:hover {
+  color: #555;
+  background: rgba(255, 255, 255, 0.5);
+  transition: none;
+}
+
+.container {
+  height: 58rem;
+  width: 85rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(0.4rem);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.home {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.home h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: #eee;
+}
+
+.home .nome span {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.home .post {
+  padding: 1rem 0;
+}
+
+.home .post span {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.home .share {
+  position: absolute;
+  left: 50%; bottom: 5rem;
+  transform: translateX(-50%);
+  display: flex;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.home .share a {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  margin: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 1rem;
+  transition: 0.2s linear;
+}
+
+.home .share a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #555;
+}
+
+.about {
+   min-height: 100%;
+}
+
+.about .content h3 {
+  font-size: 2.5rem;
+  color: #eee;
+}
+
+.about .content h3 span {
+  color: #fff;
+}
+
+.about .content p {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 0.5rem 0;
+}
+
+.about .skills {
+  padding: 1rem 0;
+}
+
+.about .skills .progress {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+
+.about .skills .progress h3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.about .skills .progress .bar {
+  position: relative;
+  width: 100%;
+  height: 0.3rem;
+  margin: 1rem 0;
+  background: #555;
+}
+
+.about .skills .progress .bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.about .skills .progress:nth-child(1) .bar span {
+  width: 95%;
+}
+
+.about .skills .progress:nth-child(2) .bar span {
+  width: 85%;
+}
+
+.about .skills .progress:nth-child(3) .bar span {
+  width: 65%;
+}
+
+.about .skills .progress:nth-child(4) .bar span {
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
 /* Se o dispositivo não tem um apontador ou se tem qualquer tipo de apontador, mas ele é do tipo grosseiro */
 @media (hover: none), (any-hover: hover) and (pointer: coarse) {
-	.container {
+	.background {
 		background: linear-gradient(90deg, var(--gradient-start-color), var(--gradient-end-color));
 		animation: changeColor 5s linear infinite;
 	}

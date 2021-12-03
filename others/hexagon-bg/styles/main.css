@@ -392,7 +392,7 @@ header .navbar ul li a:hover {
 
 .education .box-container {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 2rem 0;
@@ -435,6 +435,77 @@ header .navbar ul li a:hover {
 }
 
 
+/* CONTACT */
+
+
+.contact .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+.contact .row form {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.contact .row form .box {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  height: 4rem;
+  width: 49%;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+}
+
+.contact .row form .box::placeholder {
+  color: #eee;
+}
+
+.contact .row form .message {
+  padding-top: 1rem;
+  height: 15rem;
+  resize: none;
+  width: 100%;
+}
+
+.contact .row form .btn {
+  margin-bottom: 1rem;
+}
+
+.contact .row .content {
+  padding: 0 5rem;
+}
+
+.contact .row .content .icons {
+  padding: 1rem 0;
+}
+
+.contact .row .content .icons h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+}
+
+.contact .row .content .icons h3 i {
+  padding-right: 0.5rem;
+}
+
+.contact .row .content .icons p {
+  font-size: 1.5rem;
+  color: #eee;
+}
 
 
 

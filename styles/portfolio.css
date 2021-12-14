@@ -15,12 +15,28 @@
 }
 
 section.sec3 {
+  position: relative;
   padding: 10rem;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   background: #161623;
   color: #fff;
+  min-height: 100vh;
 }
 
+  section.sec3 .blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: 0;
+  }
+
+  section.sec3 .blob:nth-child(2) {
+    filter: blur(50px);
+  }
+  
   section.sec3 h1 {
     margin: 0;
     padding: 0;
@@ -32,4 +48,5 @@ section.sec3 {
   
   section.sec3 p {
     font-size: 1.8rem;
+    z-index: 0;
   }
